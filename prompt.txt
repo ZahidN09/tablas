@@ -1,0 +1,5 @@
+Actuando como programador, genera una página HTML y una hoja de estilos por
+separado, que muestren la tabla del 3. La página debe incluir un botón con el texto
+PROBAR en la parte superior. El diseño debe ser responsive. No usar JavaScript.
+
+En base a criterios de diseño web, mejorar el estilo visual para darle una imagen educativa para escuela, usar los estilos y tamaños de letra necesarios para que la página sea llamativa, usar reglas y una paleta de colores específica para todo el estilo de la página. Manten las características responsive siempre. Añade una parte para colocar "Desarrollado por User" y un logo.png
