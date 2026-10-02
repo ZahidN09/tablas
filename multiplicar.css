@@ -456,3 +456,211 @@ body {
     animation-delay: 0s !important;
   }
 }
+/* ============================================================
+   GRUPO DE ENTRADA · caja de texto estilizada
+   ============================================================ */
+.grupo-entrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+  animation: aparecer 0.6s ease-out 0.35s backwards;
+}
+
+.etiqueta-entrada {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(0.85rem, 2.2vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--azul-oscuro);
+}
+
+/* Caja de texto principal */
+.campo-numero {
+  width: clamp(180px, 45vw, 250px);
+  padding: 0.75em 1.3em;
+  font-family: var(--fuente-titulo);
+  font-size: clamp(1rem, 2.6vw, 1.2rem);
+  font-weight: 600;
+  text-align: center;
+  color: var(--azul-oscuro);
+  background: var(--blanco);
+  border: 3px solid var(--azul-claro);
+  border-radius: 999px;
+  outline: none;
+  box-shadow:
+    0 4px 0 var(--azul-claro),
+    0 8px 20px rgba(30, 41, 59, 0.06);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Placeholder suave */
+.campo-numero::placeholder {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Hover: se ilumina con el color índigo */
+.campo-numero:hover {
+  border-color: var(--indigo);
+  box-shadow:
+    0 4px 0 var(--indigo-claro),
+    0 10px 22px rgba(99, 102, 241, 0.14);
+}
+
+/* Focus: anillo luminoso + elevación */
+.campo-numero:focus {
+  border-color: var(--indigo);
+  box-shadow:
+    0 4px 0 var(--indigo),
+    0 0 0 5px rgba(99, 102, 241, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Quita las flechitas nativas del input number (más limpio) */
+.campo-numero::-webkit-outer-spin-button,
+.campo-numero::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.campo-numero {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* ============================================================
+   INSTRUCCIONES · panel de pasos
+   ============================================================ */
+.pasos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: clamp(0.6rem, 2vw, 0.9rem);
+  margin-top: 0.6rem;
+  animation: aparecer 0.6s ease-out 0.32s backwards;
+}
+
+.paso {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  background: var(--blanco);
+  border-radius: 16px;
+  border: 2px dashed var(--azul-claro);
+  box-shadow: 0 4px 10px rgba(30, 41, 59, 0.05);
+}
+
+.paso-num {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--blanco);
+  background: linear-gradient(135deg, var(--azul), var(--indigo));
+  border-radius: 50%;
+  box-shadow: 0 3px 0 var(--azul-oscuro);
+}
+
+.paso-texto {
+  font-size: clamp(0.85rem, 2.1vw, 0.95rem);
+  line-height: 1.35;
+  color: var(--tinta-suave);
+}
+
+.paso-texto strong {
+  color: var(--azul-oscuro);
+}
+
+.paso-texto em {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--naranja);
+}
+
+/* ============================================================
+   TEXTO DE AYUDA · debajo de la caja
+   ============================================================ */
+.ayuda {
+  max-width: 340px;
+  font-size: clamp(0.78rem, 2vw, 0.88rem);
+  font-weight: 600;
+  text-align: center;
+  color: var(--tinta-suave);
+  line-height: 1.4;
+}
+
+.ayuda kbd {
+  display: inline-block;
+  padding: 0.05em 0.5em;
+  font-family: var(--fuente-titulo);
+  font-size: 0.9em;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  background: var(--azul-claro);
+  border-radius: 6px;
+  box-shadow: inset 0 -2px 0 rgba(30, 58, 138, 0.15);
+}
+
+/* ============================================================
+   CABECERA DENTRO DEL CONTENEDOR · título de la tabla
+   ============================================================ */
+.cabecera-tabla {
+  text-align: center;
+  margin-bottom: clamp(0.9rem, 2.5vw, 1.35rem);
+}
+
+.titulo-tabla {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  margin-bottom: 0.25rem;
+}
+
+.ayuda-tabla {
+  font-size: clamp(0.82rem, 2.1vw, 0.95rem);
+  font-weight: 600;
+  color: var(--tinta-suave);
+}
+
+/* Nota final dentro del contenedor */
+.nota-tabla {
+  margin-top: clamp(1rem, 2.5vw, 1.35rem);
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: clamp(0.8rem, 2.05vw, 0.92rem);
+  font-weight: 600;
+  color: var(--tinta-suave);
+  background: linear-gradient(135deg, #fef3c7, #ffedd5);
+  border-radius: 14px;
+  border-left: 6px solid var(--naranja);
+}
+
+.nota-tabla strong {
+  color: var(--naranja);
+}
+
+/* ============================================================
+   RESPONSIVE · ajustes para móviles
+   ============================================================ */
+@media (max-width: 400px) {
+  .paso {
+    padding: 0.7rem 0.85rem;
+  }
+
+  .paso-num {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+}

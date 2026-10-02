@@ -3,3 +3,10 @@ separado, que muestren la tabla del 3. La página debe incluir un botón con el 
 PROBAR en la parte superior. El diseño debe ser responsive. No usar JavaScript.
 
 En base a criterios de diseño web, mejorar el estilo visual para darle una imagen educativa para escuela, usar los estilos y tamaños de letra necesarios para que la página sea llamativa, usar reglas y una paleta de colores específica para todo el estilo de la página. Manten las características responsive siempre. Añade una parte para colocar "Desarrollado por User" y un logo.png
+
+Sin hacer cambios en lo que ya está construido, añade una caja de texto en el que el usuario puede colocar el número del cuál quiere ver las tablas de multiplicar, solo añade eso, la caja de texto, sin cambiar nada más ni modificar el estilo
+
+finalmente para terminar vamos ha hacer aún más intuitiva la página para que cualquier persona pueda entenderla y usarla.  Mejorar la interfaz agregando:
+• Instrucciones claras
+• Mensajes de ayuda
+• Textos intuitivos
