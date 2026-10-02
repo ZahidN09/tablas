@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabla del 3 · Aprende multiplicando</title>
   <link rel="stylesheet" href="multiplicar.css">
+  <script src="multiplicar.js"></script>
 </head>
 <body>
 
@@ -28,12 +29,12 @@
 
     <p class="subtitulo">¡Multiplicar es divertido! 🎒</p>
 
-    <button type="button" class="boton-probar">PROBAR</button>
+    <button type="button" class="boton-probar" onclick=" generarTablas()">PROBAR</button>
   </header>
 
   <!-- ===== CONTENIDO ===== -->
   <main class="contenedor">
-    <ul class="tabla">
+    <ul class="tabla" id = "txtTabla">
       <li class="fila"><span class="operacion">3 × 1</span><span class="igual">=</span><span class="resultado">3</span></li>
       <li class="fila"><span class="operacion">3 × 2</span><span class="igual">=</span><span class="resultado">6</span></li>
       <li class="fila"><span class="operacion">3 × 3</span><span class="igual">=</span><span class="resultado">9</span></li>
